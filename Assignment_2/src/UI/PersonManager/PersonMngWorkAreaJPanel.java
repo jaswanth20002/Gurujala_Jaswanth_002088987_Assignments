@@ -94,7 +94,11 @@ public class PersonMngWorkAreaJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-         
+         CreatePersonJPanel panel  = new CreatePersonJPanel(userProcessContainer, persondirectory);
+        userProcessContainer.add("CreatePersonJPanel",panel);
+        
+        CardLayout layout  = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListActionPerformed
